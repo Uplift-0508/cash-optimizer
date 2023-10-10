@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.yigyung.cashoptimizer.spending.model.PeriodicChargeTypeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-10T14:17:51" hostname="yikyungui-MacBookAir.local" time="0.027">
+<testsuite name="com.yigyung.cashoptimizer.spending.model.PeriodicChargeTypeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-10T17:58:02" hostname="yikyungui-MacBookAir.local" time="0.08">
   <properties/>
-  <testcase name="test()" classname="com.yigyung.cashoptimizer.spending.model.PeriodicChargeTypeTest" time="0.027">
+  <testcase name="test()" classname="com.yigyung.cashoptimizer.spending.model.PeriodicChargeTypeTest" time="0.08">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ADMINISTRATION_COST&gt; but was: &lt;관리비&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ADMINISTRATION_COST&gt; but was: &lt;관리비&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -82,7 +82,7 @@
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
