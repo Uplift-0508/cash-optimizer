@@ -2,8 +2,8 @@ package com.yigyung.cashoptimizer.spending.model;
 
 public enum PeriodicChargeType {
     ADMINISTRATION_COST("관리비") {
-        public void test() {
-
+        public String test() {
+            return this.name();
         }
     },
     CELL_PHONE_BILL("핸드폰 요금"),
