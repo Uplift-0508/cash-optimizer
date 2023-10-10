@@ -33,7 +33,7 @@ pipeline {
 //         }
         stage('SonarQube analysis') {
             steps {
-                withSonarQubeEnv() { // Will pick the global server connection you have configured
+                withSonarQubeEnv('Uplift SonarQube Server') { // Will pick the global server connection you have configured
                     sh './gradlew sonarqube'
                 }
             }
@@ -41,7 +41,7 @@ pipeline {
         stage("Quality Gate"){
             steps {
                 timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout
-                    waitForQualityGate abortPipeline: true
+                    waitForQualityGate() abortPipeline: true
                 }
             }
         }
