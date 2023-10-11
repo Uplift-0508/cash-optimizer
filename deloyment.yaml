@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cash-optimizer-deployment
+  labels:
+    app: cash-optimizer
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cash-optimizer
+  template:
+    metadata:
+      labels:
+        app: cash-optimizer
+    spec:
+      containers:
+      - name: cash-optimizer
+        image: uplift-0508/cash-optimizer
+        ports:
+        - containerPort: 8080
