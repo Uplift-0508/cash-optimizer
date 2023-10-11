@@ -5,7 +5,7 @@ metadata:
   labels:
     app: cash-optimizer
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: cash-optimizer
@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: cash-optimizer
+        label: label
     spec:
       containers:
       - name: cash-optimizer
