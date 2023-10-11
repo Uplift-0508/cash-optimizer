@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: cash-optimizer
-        image: uplift-0508/cash-optimizer
+        image: Uplift-0508/cash-optimizer
         ports:
         - containerPort: 8080
