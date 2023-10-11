@@ -56,17 +56,17 @@ pipeline {
         }
         stage("Docker build") {
             steps {
-                sh "docker build -t uplift-0508/cash-optimizer ."
+                sh "docker build -t Uplift-0508/cash-optimizer ."
             }
         }
         stage("Docker push") {
             steps {
-                sh "docker push uplift-0508/cash-optimizer"
+                sh "docker push Uplift-0508/cash-optimizer"
             }
         }
         stage("Deploy to staging") {
             steps {
-                sh "docker run -d --rm -p 8765:8080 --name cash-optimizer uplift-0508/cash-optimizer"
+                sh "docker run -d --rm -p 8765:8080 --name cash-optimizer Uplift-0508/cash-optimizer"
             }
         }
     }
